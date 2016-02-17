@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -32,25 +33,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Institution" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
                                 <rect key="frame" x="20" y="292" width="560" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" red="0.054028215480000003" green="0.48707502349999998" blue="0.8602564103" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Program &amp; Season" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-J8-Wt4">
+                                <rect key="frame" x="20" y="317" width="560" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Decision" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-Sn-Xrr">
+                                <rect key="frame" x="20" y="342" width="560" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Date Added" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-Ph-OzR">
+                                <rect key="frame" x="20" y="367" width="560" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Status" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="AId-Nd-V2d">
+                                <rect key="frame" x="20" y="392" width="560" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RH8-x6-eVx">
+                                <rect key="frame" x="20" y="417" width="560" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="doK-3O-1pH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" red="0.90671073719999995" green="0.47915620279999999" blue="0.20150967850000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RH8-x6-eVx" secondAttribute="trailing" id="4Mi-mM-Bo6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mu1-J8-Wt4" secondAttribute="leading" id="8FJ-MS-NUN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mu1-J8-Wt4" secondAttribute="trailing" id="8Mx-6J-VMC"/>
+                            <constraint firstItem="AId-Nd-V2d" firstAttribute="top" secondItem="vqs-Ph-OzR" secondAttribute="bottom" constant="8" id="9JG-uI-kkU"/>
+                            <constraint firstItem="RH8-x6-eVx" firstAttribute="top" secondItem="AId-Nd-V2d" secondAttribute="bottom" constant="8" id="Axv-mT-9UA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RH8-x6-eVx" secondAttribute="leading" id="H1b-E2-2Ox"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tKA-Sn-Xrr" secondAttribute="trailing" id="LKM-je-Rz8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vqs-Ph-OzR" secondAttribute="leading" id="QSL-uP-ceA"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="20" symbolic="YES" id="Tsc-yG-G1q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AId-Nd-V2d" secondAttribute="leading" id="ZhE-Ik-bpS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tKA-Sn-Xrr" secondAttribute="leading" id="a4J-hb-x6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AId-Nd-V2d" secondAttribute="trailing" id="bGY-ja-BGS"/>
+                            <constraint firstItem="Mu1-J8-Wt4" firstAttribute="top" secondItem="0XM-y9-sOw" secondAttribute="bottom" constant="8" id="coe-6k-XmF"/>
+                            <constraint firstItem="vqs-Ph-OzR" firstAttribute="top" secondItem="tKA-Sn-Xrr" secondAttribute="bottom" constant="8" id="jSz-Mg-JXl"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="jWN-iV-94e"/>
                             <constraint firstAttribute="trailing" secondItem="0XM-y9-sOw" secondAttribute="trailing" constant="20" symbolic="YES" id="tHV-ZD-HQj"/>
+                            <constraint firstItem="tKA-Sn-Xrr" firstAttribute="top" secondItem="Mu1-J8-Wt4" secondAttribute="bottom" constant="8" id="xG3-VC-uxZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vqs-Ph-OzR" secondAttribute="trailing" id="xLS-qz-7xL"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="date_added" destination="vqs-Ph-OzR" id="7CY-ah-XJl"/>
+                        <outlet property="decision" destination="tKA-Sn-Xrr" id="A3w-QC-sVt"/>
+                        <outlet property="institution" destination="0XM-y9-sOw" id="ckn-qs-GUt"/>
+                        <outlet property="notes" destination="RH8-x6-eVx" id="elZ-ds-Z2H"/>
+                        <outlet property="program_season" destination="Mu1-J8-Wt4" id="9Bd-8K-tCP"/>
+                        <outlet property="status" destination="AId-Nd-V2d" id="7yB-OV-wxX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>

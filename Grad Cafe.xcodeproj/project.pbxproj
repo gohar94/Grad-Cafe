@@ -110,6 +110,8 @@
 		176513231C74CE1200F92C63 /* Grad Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				173BF42B1C74D4BA00C39A53 /* Entry.swift */,
+				173BF42D1C74D4C600C39A53 /* DataController.swift */,
 				176513241C74CE1200F92C63 /* AppDelegate.swift */,
 				176513261C74CE1200F92C63 /* MasterViewController.swift */,
 				176513281C74CE1200F92C63 /* DetailViewController.swift */,
@@ -117,8 +119,6 @@
 				1765132D1C74CE1200F92C63 /* Assets.xcassets */,
 				1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */,
 				176513321C74CE1200F92C63 /* Info.plist */,
-				173BF42B1C74D4BA00C39A53 /* Entry.swift */,
-				173BF42D1C74D4C600C39A53 /* DataController.swift */,
 			);
 			path = "Grad Cafe";
 			sourceTree = "<group>";

@@ -34,56 +34,34 @@ class DataController {
         
         if let secondColumn = rowElement.childAtIndex(1) as? HTMLElement {
             program_seasonStr = secondColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).stringByReplacingOccurrencesOfString(",", withString: "")
+        } else {
+            program_seasonStr = ""
         }
         
         if let thirdColumn = rowElement.childAtIndex(2) as? HTMLElement {
             decisionStr = thirdColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).stringByReplacingOccurrencesOfString(",", withString: "")
+        } else {
+            decisionStr = ""
         }
         
         if let fourthColumn = rowElement.childAtIndex(3) as? HTMLElement {
             date_addedStr = fourthColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).stringByReplacingOccurrencesOfString(",", withString: "")
+        } else {
+            date_addedStr = ""
         }
         
         if let fifthColumn = rowElement.childAtIndex(4) as? HTMLElement {
             statusStr = fifthColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).stringByReplacingOccurrencesOfString(",", withString: "")
+        } else {
+            statusStr = ""
         }
         
         if let sixthColumn = rowElement.childAtIndex(5) as? HTMLElement {
             notesStr = sixthColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).stringByReplacingOccurrencesOfString(",", withString: "")
+        } else {
+            notesStr = ""
         }
         
-//        // first column: institution
-//        if let firstColumn = rowElement.childAtIndex(0) as? HTMLElement {
-//            if let institutionNode = firstColumn.firstNodeMatchingSelector("td") {
-//                if let institutionString = institutionNode.objectForKeyedSubscript("href") as? String {
-//                    url = NSURL(string: urlString)
-//                }
-//                // need to make sure it's a number
-//                let textNumber = firstColumn.textContent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-//                number = Int(textNumber)
-//            }
-//        }
-//        if (url == nil || number == nil) {
-//            return nil // can't do anything without a URL, e.g., the header row
-//        }
-        
-//        if let secondColumn = rowElement.childAtIndex(3) as? HTMLElement {
-//            let text = secondColumn.textContent
-//                .stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-//                .stringByReplacingOccurrencesOfString(",", withString: "")
-//            scale = Int(text)
-//        }
-        
-//        if let thirdColumn = rowElement.childAtIndex(5) as? HTMLElement {
-//            title = thirdColumn.textContent
-//                .stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-//                .stringByReplacingOccurrencesOfString("\n", withString: "")
-//        }
-//        
-//        if let title = title, url = url, number = number, scale = scale {
-//            return Chart(title: title, url: url, number: number, scale: scale)
-//        }
-//        return nil
         let e = Entry(institution: institutionStr!, program_season: program_seasonStr!, decision: decisionStr!, date_added: date_addedStr!, status: statusStr!, notes: notesStr!)
         return e
     }

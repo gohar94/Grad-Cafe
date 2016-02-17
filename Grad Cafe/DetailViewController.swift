@@ -9,9 +9,14 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    
+    @IBOutlet weak var institution: UILabel!
+    @IBOutlet weak var program_season: UILabel!
+    @IBOutlet weak var decision: UILabel!
+    @IBOutlet weak var date_added: UILabel!
+    @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var notes: UILabel!
+    
 
     var detailItem: Entry? {
         didSet {
@@ -23,8 +28,33 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = "\(detail.institution) - \(detail.program_season) - \(detail.decision) - \(detail.date_added) - \(detail.notes) - \(detail.status)"
+            if let label1 = self.institution {
+                label1.text = detail.institution
+            }
+            
+            if let label2 = self.program_season {
+                label2.text = detail.program_season
+            }
+            
+            if let label3 = self.decision {
+                label3.text = detail.decision
+                if (detail.decision.containsString("Accept")) {
+                    label3.textColor = UIColor.greenColor()
+                } else if (detail.decision.containsString("Reject")) {
+                    label3.textColor = UIColor.redColor()
+                }
+            }
+
+            if let label4 = self.date_added {
+                label4.text = detail.date_added
+            }
+
+            if let label5 = self.status {
+                label5.text = detail.status
+            }
+            
+            if let label6 = self.notes {
+                label6.text = detail.notes
             }
         }
     }
