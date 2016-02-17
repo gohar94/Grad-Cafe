@@ -10,10 +10,14 @@ import Foundation
 import Alamofire
 import HTMLReader
 
-let URLString = "http://thegradcafe.com/survey/index.php?q=computer+science&t=m&o=&pp=25"
-
 class DataController {
+    var URLString: String
     var entries: [Entry]?
+    
+    required init(var query: String) {
+        query = query.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        URLString = "http://thegradcafe.com/survey/index.php?q=\(query)&t=m&o=&pp=100"
+    }
     
     private func parseHTMLRow(rowElement: HTMLElement) -> Entry? {
         var institutionStr: String?

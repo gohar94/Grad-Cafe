@@ -116,10 +116,69 @@
             </objects>
             <point key="canvasLocation" x="709" y="129"/>
         </scene>
+        <!--Query-->
+        <scene sceneID="tpD-Y4-mAh">
+            <objects>
+                <viewController storyboardIdentifier="queryVC" title="Query" id="ORA-BG-9MQ" customClass="QueryVC" customModule="Grad_Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldj-dc-Xxk"/>
+                        <viewControllerLayoutGuide type="bottom" id="jWH-Sd-Gmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5W5-iD-Z6t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-Wd-ynC">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Query" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpc-hQ-abA">
+                                        <rect key="frame" x="18" y="275" width="524" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28f-xX-8wm">
+                                        <rect key="frame" x="255" y="330" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="42r-Y7-1zt"/>
+                                            <constraint firstAttribute="width" constant="50" id="UcL-WP-Npx"/>
+                                        </constraints>
+                                        <state key="normal" title="Go!"/>
+                                        <connections>
+                                            <action selector="goAction:" destination="ORA-BG-9MQ" eventType="touchUpInside" id="8hG-VS-gxD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cpc-hQ-abA" firstAttribute="centerX" secondItem="qa6-Wd-ynC" secondAttribute="centerX" id="8wq-gT-wPW"/>
+                                    <constraint firstItem="28f-xX-8wm" firstAttribute="centerX" secondItem="qa6-Wd-ynC" secondAttribute="centerX" id="9eI-fM-MqQ"/>
+                                    <constraint firstItem="cpc-hQ-abA" firstAttribute="centerY" secondItem="qa6-Wd-ynC" secondAttribute="centerY" id="C2C-8a-3Hp"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="cpc-hQ-abA" secondAttribute="trailing" constant="10" id="Zhc-fa-Aka"/>
+                                    <constraint firstItem="cpc-hQ-abA" firstAttribute="leading" secondItem="qa6-Wd-ynC" secondAttribute="leadingMargin" constant="10" id="eGP-qg-ztH"/>
+                                    <constraint firstItem="28f-xX-8wm" firstAttribute="top" secondItem="cpc-hQ-abA" secondAttribute="bottom" constant="25" id="tMf-jJ-TeB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jWH-Sd-Gmm" firstAttribute="top" secondItem="qa6-Wd-ynC" secondAttribute="bottom" id="EpO-4W-1gM"/>
+                            <constraint firstItem="qa6-Wd-ynC" firstAttribute="leading" secondItem="5W5-iD-Z6t" secondAttribute="leadingMargin" id="QmF-uJ-zH9"/>
+                            <constraint firstItem="qa6-Wd-ynC" firstAttribute="top" secondItem="ldj-dc-Xxk" secondAttribute="bottom" id="SK4-H8-2G2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qa6-Wd-ynC" secondAttribute="trailing" id="zVW-OF-rRI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="query" destination="cpc-hQ-abA" id="Nc3-jS-3pO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujc-eI-6p2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="-1418"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
-                <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="splitVC" id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
@@ -190,6 +249,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

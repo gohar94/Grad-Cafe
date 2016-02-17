@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		173BF42C1C74D4BA00C39A53 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BF42B1C74D4BA00C39A53 /* Entry.swift */; };
 		173BF42E1C74D4C600C39A53 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BF42D1C74D4C600C39A53 /* DataController.swift */; };
+		173BF4301C74F40000C39A53 /* QueryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BF42F1C74F40000C39A53 /* QueryVC.swift */; };
 		176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513241C74CE1200F92C63 /* AppDelegate.swift */; };
 		176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513261C74CE1200F92C63 /* MasterViewController.swift */; };
 		176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513281C74CE1200F92C63 /* DetailViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		173BF42B1C74D4BA00C39A53 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		173BF42D1C74D4C600C39A53 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		173BF42F1C74F40000C39A53 /* QueryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryVC.swift; sourceTree = "<group>"; };
 		176513211C74CE1200F92C63 /* Grad Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grad Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		176513241C74CE1200F92C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176513261C74CE1200F92C63 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				173BF42B1C74D4BA00C39A53 /* Entry.swift */,
 				173BF42D1C74D4C600C39A53 /* DataController.swift */,
+				173BF42F1C74F40000C39A53 /* QueryVC.swift */,
 				176513241C74CE1200F92C63 /* AppDelegate.swift */,
 				176513261C74CE1200F92C63 /* MasterViewController.swift */,
 				176513281C74CE1200F92C63 /* DetailViewController.swift */,
@@ -348,6 +351,7 @@
 				176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */,
 				176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */,
 				176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */,
+				173BF4301C74F40000C39A53 /* QueryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,16 +12,55 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
-
+    
+    var askQuery = true
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+        setupRootViewController(false)
         return true
     }
+    
+    func setupRootViewController(animated: Bool) {
+        if let window = self.window {
+            var newRootViewController: UIViewController? = nil
+            var transition: UIViewAnimationOptions
+            
+            // create and setup appropriate rootViewController
+            if askQuery {
+                let loginViewController = window.rootViewController?.storyboard?.instantiateViewControllerWithIdentifier("queryVC") as! QueryVC
+                newRootViewController = loginViewController
+                transition = .TransitionFlipFromLeft
+                
+            } else {
+                let splitViewController = window.rootViewController?.storyboard?.instantiateViewControllerWithIdentifier("splitVC") as! UISplitViewController
+                let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+                navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+                splitViewController.delegate = self
+                newRootViewController = splitViewController
+                transition = .TransitionFlipFromRight
+            }
+            
+            // update app's rootViewController
+            if let rootVC = newRootViewController {
+                if animated {
+                    UIView.transitionWithView(window, duration: 0.5, options: transition, animations: { () -> Void in
+                        window.rootViewController = rootVC
+                        }, completion: nil)
+                } else {
+                    window.rootViewController = rootVC
+                }
+            }
+        }
+    }
+
+//    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        // Override point for customization after application launch.
+//        let splitViewController = self.window!.rootViewController as! UISplitViewController
+//        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+//        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+//        splitViewController.delegate = self
+//        return true
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
