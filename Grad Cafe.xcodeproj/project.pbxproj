@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173BF42C1C74D4BA00C39A53 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BF42B1C74D4BA00C39A53 /* Entry.swift */; };
+		173BF42E1C74D4C600C39A53 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BF42D1C74D4C600C39A53 /* DataController.swift */; };
 		176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513241C74CE1200F92C63 /* AppDelegate.swift */; };
 		176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513261C74CE1200F92C63 /* MasterViewController.swift */; };
 		176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513281C74CE1200F92C63 /* DetailViewController.swift */; };
@@ -15,6 +17,7 @@
 		176513311C74CE1200F92C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */; };
 		1765133C1C74CE1200F92C63 /* Grad_CafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765133B1C74CE1200F92C63 /* Grad_CafeTests.swift */; };
 		176513471C74CE1200F92C63 /* Grad_CafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513461C74CE1200F92C63 /* Grad_CafeUITests.swift */; };
+		F61A1D59A10B12028297C212 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7845BC387FA371E95F1832 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173BF42B1C74D4BA00C39A53 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		173BF42D1C74D4C600C39A53 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		176513211C74CE1200F92C63 /* Grad Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grad Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		176513241C74CE1200F92C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176513261C74CE1200F92C63 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		176513421C74CE1200F92C63 /* Grad CafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grad CafeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		176513461C74CE1200F92C63 /* Grad_CafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grad_CafeUITests.swift; sourceTree = "<group>"; };
 		176513481C74CE1200F92C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7845BC387FA371E95F1832 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B4510D2B7C03D8D18090E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F70036E16CB042553EC7861F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61A1D59A10B12028297C212 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				1765133A1C74CE1200F92C63 /* Grad CafeTests */,
 				176513451C74CE1200F92C63 /* Grad CafeUITests */,
 				176513221C74CE1200F92C63 /* Products */,
+				CC537F7D8A95E33BCFD58E86 /* Pods */,
+				9AFCC20773C23056FAEA3D7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +117,8 @@
 				1765132D1C74CE1200F92C63 /* Assets.xcassets */,
 				1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */,
 				176513321C74CE1200F92C63 /* Info.plist */,
+				173BF42B1C74D4BA00C39A53 /* Entry.swift */,
+				173BF42D1C74D4C600C39A53 /* DataController.swift */,
 			);
 			path = "Grad Cafe";
 			sourceTree = "<group>";
@@ -128,6 +141,23 @@
 			path = "Grad CafeUITests";
 			sourceTree = "<group>";
 		};
+		9AFCC20773C23056FAEA3D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7845BC387FA371E95F1832 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC537F7D8A95E33BCFD58E86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F70036E16CB042553EC7861F /* Pods.debug.xcconfig */,
+				D1B4510D2B7C03D8D18090E5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1765134B1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad Cafe" */;
 			buildPhases = (
+				0421B6734594CE1F06A3C311 /* Check Pods Manifest.lock */,
 				1765131D1C74CE1200F92C63 /* Sources */,
 				1765131E1C74CE1200F92C63 /* Frameworks */,
 				1765131F1C74CE1200F92C63 /* Resources */,
+				F137C4B2BDFFF5CD6CDF87B1 /* Embed Pods Frameworks */,
+				B9A7D51FB3A5AF88E8C3157F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,11 +290,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0421B6734594CE1F06A3C311 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A7D51FB3A5AF88E8C3157F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F137C4B2BDFFF5CD6CDF87B1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1765131D1C74CE1200F92C63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173BF42E1C74D4C600C39A53 /* DataController.swift in Sources */,
+				173BF42C1C74D4BA00C39A53 /* Entry.swift in Sources */,
 				176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */,
 				176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */,
 				176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */,
@@ -404,6 +487,7 @@
 		};
 		1765134C1C74CE1200F92C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70036E16CB042553EC7861F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grad Cafe/Info.plist";
@@ -415,6 +499,7 @@
 		};
 		1765134D1C74CE1200F92C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B4510D2B7C03D8D18090E5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grad Cafe/Info.plist";
@@ -491,6 +576,7 @@
 				1765134D1C74CE1200F92C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1765134E1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +585,7 @@
 				176513501C74CE1200F92C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		176513511C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +594,7 @@
 				176513531C74CE1200F92C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

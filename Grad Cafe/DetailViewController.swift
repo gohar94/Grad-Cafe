@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
 
-    var detailItem: AnyObject? {
+    var detailItem: Entry? {
         didSet {
             // Update the view.
             self.configureView()
@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+                label.text = "\(detail.institution) - \(detail.program_season) - \(detail.decision) - \(detail.date_added) - \(detail.notes) - \(detail.status)"
             }
         }
     }
