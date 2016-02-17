@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QueryVC: UIViewController {
+class QueryVC: UIViewController, UITextFieldDelegate {
     
     let prefs = NSUserDefaults.standardUserDefaults()
 
@@ -23,6 +23,9 @@ class QueryVC: UIViewController {
             queryStr = ""
         }
         query.text = queryStr
+        
+        // for closing keyboard on return key press
+        self.query.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +33,10 @@ class QueryVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
+    func textFieldShouldReturn(textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
     }
     
     @IBAction func goAction(sender: UIButton) {
