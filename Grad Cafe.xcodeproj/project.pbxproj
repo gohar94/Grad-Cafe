@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513241C74CE1200F92C63 /* AppDelegate.swift */; };
+		176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513261C74CE1200F92C63 /* MasterViewController.swift */; };
+		176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513281C74CE1200F92C63 /* DetailViewController.swift */; };
+		1765132C1C74CE1200F92C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1765132A1C74CE1200F92C63 /* Main.storyboard */; };
+		1765132E1C74CE1200F92C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1765132D1C74CE1200F92C63 /* Assets.xcassets */; };
+		176513311C74CE1200F92C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */; };
+		1765133C1C74CE1200F92C63 /* Grad_CafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765133B1C74CE1200F92C63 /* Grad_CafeTests.swift */; };
+		176513471C74CE1200F92C63 /* Grad_CafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176513461C74CE1200F92C63 /* Grad_CafeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		176513381C74CE1200F92C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176513191C74CE1200F92C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176513201C74CE1200F92C63;
+			remoteInfo = "Grad Cafe";
+		};
+		176513431C74CE1200F92C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176513191C74CE1200F92C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176513201C74CE1200F92C63;
+			remoteInfo = "Grad Cafe";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		176513211C74CE1200F92C63 /* Grad Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grad Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		176513241C74CE1200F92C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		176513261C74CE1200F92C63 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		176513281C74CE1200F92C63 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1765132B1C74CE1200F92C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1765132D1C74CE1200F92C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		176513301C74CE1200F92C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		176513321C74CE1200F92C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176513371C74CE1200F92C63 /* Grad CafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grad CafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1765133B1C74CE1200F92C63 /* Grad_CafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grad_CafeTests.swift; sourceTree = "<group>"; };
+		1765133D1C74CE1200F92C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176513421C74CE1200F92C63 /* Grad CafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grad CafeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		176513461C74CE1200F92C63 /* Grad_CafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grad_CafeUITests.swift; sourceTree = "<group>"; };
+		176513481C74CE1200F92C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1765131E1C74CE1200F92C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176513341C74CE1200F92C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1765133F1C74CE1200F92C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176513181C74CE1200F92C63 = {
+			isa = PBXGroup;
+			children = (
+				176513231C74CE1200F92C63 /* Grad Cafe */,
+				1765133A1C74CE1200F92C63 /* Grad CafeTests */,
+				176513451C74CE1200F92C63 /* Grad CafeUITests */,
+				176513221C74CE1200F92C63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		176513221C74CE1200F92C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				176513211C74CE1200F92C63 /* Grad Cafe.app */,
+				176513371C74CE1200F92C63 /* Grad CafeTests.xctest */,
+				176513421C74CE1200F92C63 /* Grad CafeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		176513231C74CE1200F92C63 /* Grad Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				176513241C74CE1200F92C63 /* AppDelegate.swift */,
+				176513261C74CE1200F92C63 /* MasterViewController.swift */,
+				176513281C74CE1200F92C63 /* DetailViewController.swift */,
+				1765132A1C74CE1200F92C63 /* Main.storyboard */,
+				1765132D1C74CE1200F92C63 /* Assets.xcassets */,
+				1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */,
+				176513321C74CE1200F92C63 /* Info.plist */,
+			);
+			path = "Grad Cafe";
+			sourceTree = "<group>";
+		};
+		1765133A1C74CE1200F92C63 /* Grad CafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1765133B1C74CE1200F92C63 /* Grad_CafeTests.swift */,
+				1765133D1C74CE1200F92C63 /* Info.plist */,
+			);
+			path = "Grad CafeTests";
+			sourceTree = "<group>";
+		};
+		176513451C74CE1200F92C63 /* Grad CafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				176513461C74CE1200F92C63 /* Grad_CafeUITests.swift */,
+				176513481C74CE1200F92C63 /* Info.plist */,
+			);
+			path = "Grad CafeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		176513201C74CE1200F92C63 /* Grad Cafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1765134B1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad Cafe" */;
+			buildPhases = (
+				1765131D1C74CE1200F92C63 /* Sources */,
+				1765131E1C74CE1200F92C63 /* Frameworks */,
+				1765131F1C74CE1200F92C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grad Cafe";
+			productName = "Grad Cafe";
+			productReference = 176513211C74CE1200F92C63 /* Grad Cafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		176513361C74CE1200F92C63 /* Grad CafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1765134E1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeTests" */;
+			buildPhases = (
+				176513331C74CE1200F92C63 /* Sources */,
+				176513341C74CE1200F92C63 /* Frameworks */,
+				176513351C74CE1200F92C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176513391C74CE1200F92C63 /* PBXTargetDependency */,
+			);
+			name = "Grad CafeTests";
+			productName = "Grad CafeTests";
+			productReference = 176513371C74CE1200F92C63 /* Grad CafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		176513411C74CE1200F92C63 /* Grad CafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176513511C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeUITests" */;
+			buildPhases = (
+				1765133E1C74CE1200F92C63 /* Sources */,
+				1765133F1C74CE1200F92C63 /* Frameworks */,
+				176513401C74CE1200F92C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176513441C74CE1200F92C63 /* PBXTargetDependency */,
+			);
+			name = "Grad CafeUITests";
+			productName = "Grad CafeUITests";
+			productReference = 176513421C74CE1200F92C63 /* Grad CafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		176513191C74CE1200F92C63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Gohar Irfan";
+				TargetAttributes = {
+					176513201C74CE1200F92C63 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 69YCH34E2J;
+					};
+					176513361C74CE1200F92C63 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 69YCH34E2J;
+						TestTargetID = 176513201C74CE1200F92C63;
+					};
+					176513411C74CE1200F92C63 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 69YCH34E2J;
+						TestTargetID = 176513201C74CE1200F92C63;
+					};
+				};
+			};
+			buildConfigurationList = 1765131C1C74CE1200F92C63 /* Build configuration list for PBXProject "Grad Cafe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 176513181C74CE1200F92C63;
+			productRefGroup = 176513221C74CE1200F92C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				176513201C74CE1200F92C63 /* Grad Cafe */,
+				176513361C74CE1200F92C63 /* Grad CafeTests */,
+				176513411C74CE1200F92C63 /* Grad CafeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1765131F1C74CE1200F92C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176513311C74CE1200F92C63 /* LaunchScreen.storyboard in Resources */,
+				1765132E1C74CE1200F92C63 /* Assets.xcassets in Resources */,
+				1765132C1C74CE1200F92C63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176513351C74CE1200F92C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176513401C74CE1200F92C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1765131D1C74CE1200F92C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176513291C74CE1200F92C63 /* DetailViewController.swift in Sources */,
+				176513271C74CE1200F92C63 /* MasterViewController.swift in Sources */,
+				176513251C74CE1200F92C63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176513331C74CE1200F92C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1765133C1C74CE1200F92C63 /* Grad_CafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1765133E1C74CE1200F92C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176513471C74CE1200F92C63 /* Grad_CafeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		176513391C74CE1200F92C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176513201C74CE1200F92C63 /* Grad Cafe */;
+			targetProxy = 176513381C74CE1200F92C63 /* PBXContainerItemProxy */;
+		};
+		176513441C74CE1200F92C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176513201C74CE1200F92C63 /* Grad Cafe */;
+			targetProxy = 176513431C74CE1200F92C63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1765132A1C74CE1200F92C63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1765132B1C74CE1200F92C63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1765132F1C74CE1200F92C63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				176513301C74CE1200F92C63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		176513491C74CE1200F92C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1765134A1C74CE1200F92C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1765134C1C74CE1200F92C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Grad Cafe/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-Cafe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1765134D1C74CE1200F92C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Grad Cafe/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-Cafe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1765134F1C74CE1200F92C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Grad CafeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-CafeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grad Cafe.app/Grad Cafe";
+			};
+			name = Debug;
+		};
+		176513501C74CE1200F92C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Grad CafeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-CafeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grad Cafe.app/Grad Cafe";
+			};
+			name = Release;
+		};
+		176513521C74CE1200F92C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Grad CafeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-CafeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Grad Cafe";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		176513531C74CE1200F92C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Grad CafeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.goharirfan.Grad-CafeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Grad Cafe";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1765131C1C74CE1200F92C63 /* Build configuration list for PBXProject "Grad Cafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176513491C74CE1200F92C63 /* Debug */,
+				1765134A1C74CE1200F92C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1765134B1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad Cafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1765134C1C74CE1200F92C63 /* Debug */,
+				1765134D1C74CE1200F92C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1765134E1C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1765134F1C74CE1200F92C63 /* Debug */,
+				176513501C74CE1200F92C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		176513511C74CE1200F92C63 /* Build configuration list for PBXNativeTarget "Grad CafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176513521C74CE1200F92C63 /* Debug */,
+				176513531C74CE1200F92C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 176513191C74CE1200F92C63 /* Project object */;
+}
