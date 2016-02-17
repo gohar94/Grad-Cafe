@@ -18,7 +18,10 @@ class QueryVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let queryStr = prefs.valueForKey("QUERY") as! String
+        var queryStr = prefs.valueForKey("QUERY") as? String
+        if queryStr == nil {
+            queryStr = ""
+        }
         query.text = queryStr
     }
 
@@ -27,6 +30,10 @@ class QueryVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func goAction(sender: UIButton) {
         prefs.setValue(query.text, forKey: "QUERY")
