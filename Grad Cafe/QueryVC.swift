@@ -18,11 +18,10 @@ class QueryVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var queryStr = prefs.valueForKey("QUERY") as? String
-        if queryStr == nil {
-            queryStr = ""
+        let queryStr = prefs.valueForKey("QUERY") as? String
+        if queryStr != nil {
+            query.text = queryStr
         }
-        query.text = queryStr
         
         // for closing keyboard on return key press
         self.query.delegate = self
