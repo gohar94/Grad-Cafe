@@ -72,8 +72,8 @@ class DataController {
     
     private func isEntriesTable(tableElement: HTMLElement) -> Bool {
         if tableElement.children.count > 0 {
-            if tableElement.innerHTML.containsString("dAccepted") || tableElement.innerHTML.containsString("dRejected") {
-                return true
+            if tableElement.innerHTML.containsString("dAccepted") || tableElement.innerHTML.containsString("dRejected") || tableElement.innerHTML.containsString("instcol") {
+                return true;
             }
         }
         return false
